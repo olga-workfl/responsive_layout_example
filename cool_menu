@@ -1,0 +1,173 @@
+<div class="mobile">
+	<header>
+		<div class="menu">
+			<a class="menu-triger" href="#"></a>
+			<div class="menu-popup">
+				<a class="menu-close" href="#"></a>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>		
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>						
+			</div>
+		</div>
+ 		<div class="logo">Site.ru</div>
+	</header>
+	<main class="content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit mi non nisl tempus, 
+			pretium ultricies purus aliquet. Nam ex nisl, pellentesque a porttitor at, tincidunt id purus. 
+			Vestibulum a sagittis sem. Cras id dapibus nisi. In rhoncus id felis ac luctus. Etiam id
+			porttitor nisi, in dignissim enim. Nam vitae ex efficitur, facilisis nisi ac, semper dui. 
+			Suspendisse vestibulum nec augue placerat faucibus. Etiam rutrum urna id risus feugiat 
+			ullamcorper. Mauris tristique nisl magna, sed aliquet felis semper sed. Vestibulum ut
+			sodales sapien. Vivamus luctus eros vitae aliquet pharetra. Fusce vulputate risus tortor, 
+			non accumsan ligula auctor ac. Donec tincidunt libero eget nisi consectetur, sit amet 
+			ultricies neque luctus. Quisque id sapien id quam bibendum mattis ac quis nibh. 
+			Ut euismod ex ut malesuada consectetur.
+		</p>
+		<p>
+			Phasellus eleifend diam a facilisis auctor. Etiam dapibus velit metus, a vulputate erat 
+			condimentum sed. Aliquam porta at diam ut euismod. Mauris ut turpis vehicula, auctor ex 
+			non, ornare justo. Integer a neque sem. Sed finibus ipsum eget elementum blandit. Duis 
+			nec elit ullamcorper sem faucibus scelerisque. Fusce ipsum nibh, scelerisque convallis 
+			viverra euismod, pharetra eu mi. Aenean aliquet enim at risus commodo, eget aliquam nisl 
+			gravida. Aenean sodales vitae arcu a lobortis. Aliquam convallis accumsan tristique. 
+			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+			egestas. Donec non augue accumsan, lobortis nunc non, faucibus nulla. Maecenas tincidunt 
+			porttitor dolor quis tempor. Proin pellentesque dui quis arcu eleifend, vel suscipit nisl pretium.
+		</p>
+		<p>
+			Vestibulum vestibulum, ante vitae dapibus semper, lorem erat vehicula augue, euismod rhoncus orci 
+			mauris sit amet enim. Aliquam euismod felis vitae consequat porttitor. Vestibulum varius ac nibh 
+			et convallis. Vivamus eros eros, aliquet id volutpat sit amet, elementum quis urna. Donec vulputate 
+			arcu pharetra, ultrices lacus eget, feugiat tellus. Cras convallis varius urna, vitae varius enim 
+			tempus eu. Nulla pellentesque molestie faucibus. Donec semper risus id turpis gravida imperdiet.
+		</p>
+	</main>
+</div>
+<style type="text/css">
+body {
+	background: #eee;
+	padding: 20px;
+}
+.mobile {
+	width: 375px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid #ddd;
+	background: #fff;
+	overflow: hidden;
+}
+header {
+	height: 70px;
+	background: #ddd;
+}
+.logo {
+	position: absolute;
+	top: 13px;
+	left: 138px;
+	font-weight: 900;
+	font-size: 30px;
+	color: #ff4632;
+}
+main {
+	padding: 10px;
+}
+
+.menu-triger {
+	background: url(https://snipp.ru/demo/449/menu.png) 0 0 repeat;
+	display: block;
+	width: 25px;
+	height: 17px;
+	position: absolute;
+	right: 15px;
+	top: 28px;
+}	
+.menu-close {
+	background: url(https://snipp.ru/demo/449/close.png) 0 0 repeat;
+	display: block;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 100;
+}
+.menu-popup {
+	background: #2c2e3e;
+	display: none;
+	position: absolute;
+	right: -110%;
+	top: 0;
+	width: 250px;
+	box-sizing: border-box;
+	padding: 30px;
+	z-index: 9999;	
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+	margin: 0;
+	padding: 0;
+}
+.menu-popup li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+.menu-popup li a {
+	font-size: 18px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	line-height: 1.4;	
+	text-decoration: none;
+}
+.body_pointer * {
+	cursor: pointer;
+}
+</style>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(function() {
+	var $menu_popup = $('.menu-popup');
+
+	$(".menu-triger").click(function(){
+		$('body').addClass('body_pointer');		
+		$menu_popup.show(0);
+		$menu_popup.animate(
+			{right: parseInt($menu_popup.css('left'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
+			300
+		);
+		return false;
+	});	
+	
+	$(".menu-close").click(function(){
+		$('body').removeClass('body_pointer');		
+		$menu_popup.animate(
+			{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
+			300, 
+			function(){
+				$menu_popup.hide(0);
+			}
+		);
+		return false;
+	});	
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu-popup').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.animate(
+				{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
+				300, 
+				function(){
+					$menu_popup.hide(0);
+				}
+			);
+		}
+	});
+});
+</script>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Resto-Profi_kontakty</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.2.js "></script>  
+</head>
+   <body>
+    
+    
+<!--start header-->
+    <!--start header-->
+    <header>
+         <div class="header_plashka"> 
+              <div class="header_plashka-container" >
+             <nav class="header_nav">
+                 
+                 <ul class="header_nav-list">
+                     <li class="header_nav-item"><a href="/" class="header_nav-logo"><p>Resto-Profi</p></a> 
+                     </li>
+                     <li class="header_nav-item">
+                         <a href="/archive.html" class="header_nav-item-link"><p>архив</p></a>
+                     </li>
+                     
+                     <li class="header_nav-item">
+                         <a href="/kontakty.html" class="header_nav-item-link"><p>контакты</p></a>
+                            <ul class="submenu">
+                                <li><a href="edition.html"><p>редакция</p></a></li>
+                                <li><a href="kontakty.html"><p>обратная связь</p></a></li>
+                            </ul>
+                     </li>
+                     <li class="header_nav-item">
+                         <div class="header_nav-item-circle">
+                             <a href="https://t.me/resto_profi"><img src="img/teleg.png"></a>
+                            
+                         </div>
+                     </li>
+                     <li class="header_nav-item">   
+                        <div class="header_nav-item-circle">
+                            <a href="https://www.instagram.com/resto.profi.ru"> <img src="img/insta.png"></a>
+                         </div>
+                     </li>
+                     <li class="header_nav-item">
+                         <div class="header_nav-item-circle">
+                            <a href="https://www.facebook.com/Restoprofiru-103158781492207"><img src="img/face.png"></a>
+                         </div>
+                     </li>
+                     <li class="header_nav-item-tel">
+                
+                         <div class="header_nav-item-link"><p>8 (968) (354) 08 29</p>
+                         </div>
+                     </li>
+                     <li class="header_nav-item-baguette">
+                         <div class="header_nav-item-link"></div>
+                     </li>
+                     <li class="header_nav-item">
+                         <div class="header_nav-link"><p>подписка</p></div>
+                     </li>
+                     <li class="header_nav-item">
+                         
+                         <div >
+                             <button id="header_nav-item-circle-large" onClick="podpiska_vis()"><img src="img/heart.svg"></button>
+                             
+                         </div>
+                     </li>
+                 </ul>
+             </nav>
+            </div>
+        </div>
+       
+    </header>
+<!--end header-->
+<!--start main-->
+       <div id="podpiska">
+            <!-- Subscription Form -->
+                <form action="/form.php" method="post" class="podpiska_form">
+                    <input name="email" class="podpiska_email" type="text" placeholder="Введите ваш email ...">
+                    <button type="submit" class="btn_email">Подписаться</button>
+                </form>
+                <!-- End Subscription Form -->
+         <button id="podpiska_close-button" onClick="podpiska_hid()">x</button>
+
+        </div>   
+       <!--start banner-->
+       <div class="wrapper">
+           <div class="banner">
+               <div class="banner_content">
+                    <a href="http://pudurobotics.com"><img src="img/pub3.png"></a>
+                </div>
+           </div>
+       </div>
+       
+<!--end banner-->
+ <!--start novosti heading-->     
+    <div class="wrapper">
+        <div class="main_vipusk-content">
+               <div class="heading">
+                           <h1>Контакты</h1>
+               </div>
+                <div class="main_vipusk-blackline">
+                </div>   
+       </div>
+    
+    
+        <div class="main_vipusk-content-kontakty-but">
+        <form>
+               <a href="mailto:olga_chernogaeva@mail.ru" class="kontakty_button-red">Обратная связь </a>
+         </form>
+            <form>
+               <p><input type="button" class="kontakty_button-red" value="Редакция" onclick="window.location.href='edition.html';"></p>
+         </form>
+            </div>
+        <div class="main_vipusk-content-kontakty">
+            <h2>По вопросам обращаться:</h2>
+        </div>
+        <div class="main_vipusk-content-kontakty">
+        <div class="main_vipusk-content-kontakty-content">
+            <a href="https://www.facebook.com/Restoprofiru-103158781492207">
+                <div class="main_vipusk-content-kontakty-social-box">
+                <div class="main_vipusk-content-kontakty-social-box-imagebox">
+                    <img src="img/face.png">
+                </div>
+                <p>перейти</p>
+                
+            </div>
+            </a>
+            <a href="https://www.instagram.com/resto.profi.ru"><div class="main_vipusk-content-kontakty-social-box">
+                <div class="main_vipusk-content-kontakty-social-box-imagebox">
+                    <img src="img/insta.png">
+                </div>
+                <p>перейти</p>
+                
+            </div>
+            </a>
+            <a href="mailto:olga_chernogaeva@mail.ru">
+                <div class="main_vipusk-content-kontakty-social-box">
+                <div class="main_vipusk-content-kontakty-social-box-imagebox">
+                    <img src="img/gmail.png">
+                </div>
+                <p>перейти</p>
+                
+            </div>
+            </a>
+        
+        </div>
+        </div>
+       
+        <div class="main_vipusk-content-kontakty">
+            <a href="mailto:olga_chernogaeva@mail.ru"><h2>Оставьте заявку<br> 
+                    на получение прайса</h2></a>
+            <form>
+               <p><input type="text" class="kontakty_button-name" value="name"></p>
+               
+         </form>
+        <form>
+              
+               <p><input type="email" class="kontakty_button-email" value="email"></p>
+         </form>
+            <form action="/form_price.php" method="post">
+              
+               <p><input type="button" class="kontakty_button-prise" value="получить прайс" onClick="podpiska_vis()"></p>
+         </form>
+            <div class="kontakty_button-ozn">
+               <a href="/files/agreement.pdf"><p>ознакомиться</p></a></div>
+         
+        </div>
+       
+       <div class="main_vipusk-content-kontakty">
+        <div class="main_vipusk-blackline">
+            </div>
+         </div>
+           
+                    <div class="main_vipusk-content-kontakty">
+                        <a href="mailto:olga_chernogaeva@mail.ru"><h2>Оставьте заявку для размещения<br>
+                          вашей статьи в журнале</h2></a>
+
+             <form>
+              
+                    <p><input type="email" class="kontakty_button-email" value="email"></p>
+                </form>
+            <form>
+              
+               <p><input type="email" class="kontakty_button-email" value="ссылка статьи в PDF"></p>
+         </form>
+            <form action="/form_article.php" method="post">
+              
+               <p><input type="button" class="kontakty_button-prise" value="получить прайс" onClick="podpiska_vis()"></p>
+         </form>
+            <div class="kontakty_button-ozn">
+               <a href="/files/agreement.pdf"><p>ознакомиться</p></a></div>
+         
+        </div>
+        
+        
+    </div>
+<!--end novosti heading-->
+ 
+    <!--start pub -->
+       <div class="main_pub">
+           <div class="wrapper">
+               <div class="main_pub-content">
+                   <div class="main_imagebox-pub">
+                   <a href="kontakty.html" class="main_pub-item-link">
+                   <img src="img/pub1.png"></a>
+                   </div>
+                   <div class="main_imagebox-pub">
+                   <a href="http://joshu.tilda.ws/" class="main_pub-item-link">
+                   <img src="img/pub4.png"></a>
+                   </div>
+                   <div class="main_imagebox-pub">
+                   <a href="https://resto-profi.ru/" class="main_pub-item-link">
+                   <img src="img/pub5.png"></a>
+                   </div>
+               </div>
+           </div>
+       </div>
+ <!--end pub-->
+<script src="subscribe.js"></script>
+ <footer>
+        
+        <div class="footer_heading">
+            <div class="footer_line"></div>
+                    <h1><a href="#!" id="footer_nav-logo"><p>Resto-Profi</p></a>
+                    </h1>
+               <div class="footer_line"></div>
+        </div>
+        <div class="wrapper">
+            <div class="footer_container">
+                <ul class="footer_nav">
+                    <li class="footer_nav-item">
+                         <a href="/kontakty.html" class="footer_nav-item-link"><h5>контакты</h5></a>
+                     </li>
+                     <li class="footer_nav-item">
+                         <a href="/kontakty.html" class="footer_nav-item-link"><p>журналисты</p></a>
+                     </li>
+                    <li class="footer_nav-item">
+                         <a href="/kontakty.html" class="footer_nav-item-link"><p>для рекламодателей</p></a>
+                     </li>
+                
+                </ul>
+                <ul class="footer_nav">
+                    <li class="footer_nav-item">
+                         <a href="/kontakty.html" class="footer_nav-item-link"><h5>подписка</h5></a>
+                     </li>
+                    <li class="footer_nav-item">
+                         <a href="/" class="footer_nav-item-link"><p>8 (968) (354) 08 29</p></a>
+                     </li>
+                    
+                    <div class="footer_nav-group-circle-items">
+                    
+                         <div class="footer_nav-item-circle">
+                             <img src="img/teleg.png">
+                         </div>
+                         <div class="footer_nav-item-circle">
+                             <img src="img/insta.png">
+                         </div> 
+                         <div class="footer_nav-item-circle">
+                                <img src="img/face.png">
+                         </div>
+                     
+                    </div>
+                </ul>
+                <ul class="footer_nav">
+                    <li class="footer_nav-item">
+                         <a href="/archive.html" class="footer_nav-item-link"><h5>архив</h5></a>
+                     </li>
+                    
+                
+                </ul>
+            </div>
+        </div>
+    
+    </footer>           
+    </body>
+</html>
